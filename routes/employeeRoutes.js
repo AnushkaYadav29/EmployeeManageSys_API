@@ -1,5 +1,5 @@
 const express = require("express");
-const router = express.Router(); // Consistently using 'router'
+const router = express.Router(); 
 
 const {
     getEmployees,
@@ -20,8 +20,7 @@ const {
     getNewestJoinedEmployee,
     filterEmployeesByDateRange,
     updateAllDetails
-} = require("../controllers/employeeController"); // Verify this path matches your controller filename
-
+} = require("../controllers/employeeController"); 
 // Base operations
 router.get("/", getEmployees);
 router.post("/", createEmployee);
